@@ -10,7 +10,35 @@
 
 ---
 
-# 📊 CSV Data Summarizer - Claude Skill
+# 📊 CSV Data Summarizer + GBD Semantic Layer
+
+A powerful Claude Skill that automatically analyzes CSV files and generates comprehensive insights with visualizations. Now enhanced with **Gemini File Search** for building a semantic layer over massive CSV datasets (20GB+) with advanced analytics.
+
+## 🆕 NEW: GBD Semantic Layer (Research-Grade Analytics)
+
+Transform your Global Burden of Disease (GBD) or any large CSV dataset into an intelligent, queryable system with:
+
+- 🗃️ **Vector Database Storage** - Store 20GB+ of CSVs in Gemini File Search (up to 1TB)
+- 🔍 **Semantic Search** - Ask questions in natural language, get cited answers from your data
+- 📊 **Advanced Analytics** - CausalImpact, Prophet forecasting, A/B testing, temporal trends
+- ✅ **Ground Truth Verification** - Schema validation + citations to source CSVs
+- 📈 **Publication-Ready Reports** - Professional visualizations with statistical rigor
+
+**Perfect for:** Epidemiological research, health economics, policy analysis, or any massive CSV dataset requiring semantic search + advanced analytics.
+
+### Quick Start for GBD Semantic Layer
+
+1. **Install:** `pip install -r requirements.txt`
+2. **Upload CSVs:** 20GB of GBD data → Gemini File Search (one-time)
+3. **Query:** Ask questions → Get answers with citations
+4. **Analyze:** Run causal analysis, forecasting, A/B tests
+5. **Report:** Generate publication-ready research reports
+
+📚 **See:** [`QUICKSTART.md`](QUICKSTART.md) | [`USAGE_GUIDE.md`](USAGE_GUIDE.md) | [`SCHEMA_CONSISTENCY_GUIDE.md`](SCHEMA_CONSISTENCY_GUIDE.md)
+
+---
+
+## 🎯 Original Skill: CSV Data Summarizer
 
 A powerful Claude Skill that automatically analyzes CSV files and generates comprehensive insights with visualizations. Upload any CSV and get instant, intelligent analysis without being asked what you want!
 
@@ -53,16 +81,30 @@ A powerful Claude Skill that automatically analyzes CSV files and generates comp
 
 ## 📦 What's Included
 
+### Original CSV Summarizer Skill
 ```
 csv-data-summarizer-claude-skill/
 ├── SKILL.md              # Claude Skill definition
 ├── analyze.py            # Comprehensive analysis engine
-├── requirements.txt      # Python dependencies
 ├── examples/
-│   └── showcase_financial_pl_data.csv  # Demo P&L financial dataset (15 months, 25 metrics)
+│   └── showcase_financial_pl_data.csv  # Demo P&L financial dataset
 └── resources/
     ├── sample.csv        # Example dataset
     └── README.md         # Usage documentation
+```
+
+### NEW: GBD Semantic Layer Components
+```
+├── gemini_file_search.py    # Gemini File Search integration & upload
+├── advanced_analytics.py    # CausalImpact, Prophet, A/B testing, temporal trends
+├── semantic_layer.py        # Main research interface (questions → insights)
+├── gbd_schema_mapper.py     # Schema validation & column standardization
+├── requirements.txt         # Updated dependencies (Gemini API, Prophet, etc.)
+├── QUICKSTART.md            # 15-minute getting started guide
+├── USAGE_GUIDE.md           # Complete usage documentation
+├── SCHEMA_CONSISTENCY_GUIDE.md  # Ground truth integrity guide
+└── examples/
+    └── demo_filename_metadata.py  # Filename metadata extraction demo
 ```
 
 ## 🎯 How It Works

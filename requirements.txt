@@ -1,4 +1,29 @@
+# Core Data Analysis (existing)
 pandas>=2.0.0
 matplotlib>=3.7.0
 seaborn>=0.12.0
+numpy>=1.24.0
+
+# Gemini API Integration
+google-generativeai>=0.8.0
+
+# GBD Metadata (optional - requires IHME access)
+# gbd-mapping
+
+# Advanced Analytics
+causalimpact>=0.1.1           # Causal analysis (Python port from R)
+prophet>=1.1.5                # Time-series forecasting (Meta)
+scipy>=1.10.0                 # Statistical testing
+statsmodels>=0.14.0           # Statistical models
+
+# Enhanced Visualizations
+plotly>=5.17.0                # Interactive visualizations
+kaleido>=0.2.1                # Static plotly exports
+
+# NLP for Semantic Understanding
+spacy>=3.7.0                  # Column name parsing (optional)
+
+# Utilities
+python-dotenv>=1.0.0          # Environment variable management
+tqdm>=4.66.0                  # Progress bars for batch uploads
 
